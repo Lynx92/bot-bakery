@@ -1,11 +1,10 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/bot-bakery/" : "/",
   pluginOptions: {
     quasar: {
-      importStrategy: 'kebab',
+      importStrategy: "kebab",
       rtlSupport: false
     }
   },
-  transpileDependencies: [
-    'quasar'
-  ]
-}
+  transpileDependencies: ["quasar"]
+};
