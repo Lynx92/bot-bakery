@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --dest docs", 
+    "build": "vue-cli-service build --dest docs",
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.4.3",
-    "quasar": "^1.0.0",
+    "quasar": "^1.5.11",
     "vue": "^2.6.10"
   },
   "devDependencies": {
