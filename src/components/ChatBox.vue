@@ -1,6 +1,6 @@
 <template>
   <section class="chat-box">
-    <img class="botimg" src="./bot.png" alt="bot" />
+    <img class="botimg" src="../assets/bot.png" alt="bot" />
     <h1 class="title">PASTELITO-BOT</h1>
     <div class="chat-box-list-container">
       <ul class="chat-box-list">
@@ -87,7 +87,7 @@ export default {
       setTimeout(() => {
         axios
           .get(
-            "https://xz94zfs6u8.execute-api.eu-west-1.amazonaws.com/default/myBakery"
+            "https://cors-anywhere.herokuapp.com/https://xz94zfs6u8.execute-api.eu-west-1.amazonaws.com/default/myBakery"
           )
           .then(res => {
             let foodDay =  res.data
