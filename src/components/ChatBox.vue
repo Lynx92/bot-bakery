@@ -90,7 +90,7 @@ export default {
             "https://cors-anywhere.herokuapp.com/https://xz94zfs6u8.execute-api.eu-west-1.amazonaws.com/default/myBakery"
           )
           .then(res => {
-            let foodDay =  res.data
+            let foodDay = res.data;
             this.messages.push({
               text: `¡Seguro que te gusta un buen ${foodDay}!`,
               author: "bot",
@@ -101,7 +101,8 @@ export default {
             console.error("Error en coger de la API la comida", err);
             this.userSelect = true;
             this.messages.push({
-              text: '¡Ups! parece que tengo un error en mis circuitos, espera un rato hasta que lo arregle',
+              text:
+                "¡Ups! parece que tengo un error en mis circuitos, espera un rato hasta que lo arregle",
               author: "bot",
               type: "left"
             });
@@ -149,7 +150,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
 
 .botimg {
   width: 10rem;
@@ -164,7 +165,7 @@ export default {
   animation: bounceInDown 2s;
   text-shadow: 6px 5px 7px rgba(0, 0, 0, 0.3);
   margin-bottom: 2rem;
-  font-family: 'Mansalva', cursive;
+  font-family: "Mansalva", cursive;
 }
 .chat-box {
   position: relative;
