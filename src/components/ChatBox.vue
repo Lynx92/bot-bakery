@@ -23,9 +23,16 @@
       />
     </div>
     <div class="chat-btns q-gutter-sm row justify-center" v-if="userSelect">
-      <q-btn class="col-2" color="red-5" @click="userSelectNo()" label="No" />
       <q-btn
         class="col-2"
+        icon="clear"
+        color="red-5"
+        @click="userSelectNo()"
+        label="No"
+      />
+      <q-btn
+        class="col-2"
+        icon="done"
         color="green-5"
         @click="userSelectYes()"
         label="SI"
